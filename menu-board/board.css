@@ -1,0 +1,73 @@
+/* 엘가든 메뉴판 공용 스타일 — tv.html(손님용 1920x1080), print-1/2.html(A4 1050x1485)이 함께 쓴다.
+   값은 Figma 「엘가든 메뉴판」 원본에서 측정했다. 규칙은 menu-board/README.md 참고. */
+
+@font-face { font-family: "Maplestory"; src: url(fonts/maplestory-light.otf); font-weight: 300; }
+@font-face { font-family: "Tium"; src: url(fonts/tmon-tium-bold.ttf); font-weight: 700; }
+@font-face { font-family: "Gerhaus"; src: url(fonts/gerhaus-regular.ttf); }
+@font-face { font-family: "Yache"; src: url(fonts/yanolja-yache-bold.ttf); font-weight: 700; }
+
+:root {
+  --ink: #1e1e1e;      /* 본문·가격·구분선 */
+  --green: #64bb68;    /* 섹션 제목 */
+  --red: #fa6868;      /* BEST 배지, TV 공지 */
+  --ice: #77bef0;      /* only ice 배지 */
+  --orange: #ff894f;   /* 포장가능 */
+  --orange-dark: #cc6124; /* 포장가능(빙수 일부) */
+  --brown: #7b542f;    /* 상단 소개문 */
+  --grey: #57595b;     /* 원산지, 지면 브런치 설명 */
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html, body { background: #fff; }
+.board {
+  position: relative; overflow: hidden; background: #fff; color: var(--ink);
+  font-family: "Maplestory", sans-serif; font-weight: 300; font-size: 20px; line-height: 1.15;
+  -webkit-font-smoothing: antialiased;
+}
+.board > * { position: absolute; }
+ul { list-style: none; }
+img { display: block; object-fit: cover; }
+
+/* ── 음료 목록(.list): 섹션 제목 + 이름/가격 행 ───────────────── */
+.board { --row: 25px; --sec-h: 31px; }
+.sec {
+  position: relative; height: calc(var(--sec-h) + 1px); border-bottom: 1px solid var(--ink);
+  font: 30px/25px "Gerhaus"; color: var(--green); white-space: nowrap;
+}
+.sec .extra { position: absolute; right: 3px; bottom: 1px; font: 13px/17px "Maplestory"; color: var(--ink); }
+.sec .extra b { font: 700 13px/17px "Tium"; margin-left: 4px; }
+.item { display: flex; align-items: center; height: var(--row); white-space: nowrap; }
+.item .name { flex: 1; }
+.price { font-family: "Tium"; font-weight: 700; font-size: 20px; text-align: right; }
+small { font-size: 15px; }
+small.xs { font-size: 10px; }
+.note { font-size: 15px; height: var(--row); display: flex; align-items: center; white-space: pre; }
+.note.r { justify-content: flex-end; text-align: right; }
+.note.c { justify-content: center; text-align: center; }
+
+/* 배지: 이름 뒤에 붙는 BEST / only ice */
+.best, .ice { font: 700 25px/1 "Yache"; margin-left: 10px; }
+.best { color: var(--red); }
+.ice { color: var(--ice); }
+.best + .ice { margin-left: 6px; }
+
+/* ── 사진 카드(.card): [포장가능] 사진 / 이름·가격 / 설명 ──────── */
+.card { position: relative; }
+.card .takeout { height: 15px; font-size: 15px; line-height: 15px; color: var(--orange); text-align: right; }
+.card .takeout.dark { color: var(--orange-dark); }
+.card img { width: 100%; }
+.card .row { display: flex; justify-content: space-between; align-items: center; height: 25px; white-space: nowrap; }
+.card .row .price { font-family: "Maplestory"; font-weight: 300; }
+.card .row .price.tium { font-family: "Tium"; font-weight: 700; }
+.card .desc { font-size: 15px; line-height: 17px; }
+.card .sub { display: flex; justify-content: space-between; align-items: center; font-size: 15px; height: 17px; }
+.card .sub .price { font-family: "Maplestory"; font-weight: 300; font-size: 15px; }
+.card .sticker { position: absolute; }
+
+/* 공지 + 원산지 */
+.notice { text-align: center; }
+.notice p { display: flex; align-items: center; justify-content: center; white-space: pre; }
+.notice .main { height: 120px; font-size: 20px; }
+.notice .origin { height: 88px; margin-top: -5px; font-size: 15px; color: var(--grey); line-height: 17.6px; }
+
+.intro { font-size: 15px; color: var(--brown); text-align: right; white-space: pre; display: flex; flex-direction: column; justify-content: center; }

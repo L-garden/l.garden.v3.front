@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>엘가든 메뉴</title>
+<link rel="stylesheet" href="board.css">
+<style>
+  body { overflow: hidden; }
+  .board { width: 1920px; height: 1080px; transform-origin: 0 0; }
+  .photos { left: 14px; top: 4px; width: 250px; display: grid; grid-auto-rows: 268.67px; }
+  .photos img { width: 250px; height: 250px; }
+  .photos figcaption { height: 20px; font-size: 15px; line-height: 20px; text-align: right; }
+  .list { left: 287px; top: 53px; width: 413px; }
+  .cards { left: 753px; top: -1px; width: 1126px; }
+  .cardrow { display: grid; grid-template-columns: repeat(4, 250px); column-gap: 42px; align-items: start; }
+  .cards img { height: 250px; }
+</style>
+</head>
+<body>
+<main class="board">
+
+  <!-- 왼쪽 음료 사진 4장 -->
+  <div class="photos">
+    <figure><img src="images/drink-avocado-latte-01.jpg" alt="아보카도라떼"><figcaption>아보카도라떼</figcaption></figure>
+    <figure><img src="images/drink-mango-matcha-latte-01.jpg" alt="망고말차라떼"><figcaption>망고말차라떼</figcaption></figure>
+    <figure><img src="images/drink-jujube-tea-01.jpg" alt="대추차"><figcaption>대추차</figcaption></figure>
+    <figure><img src="images/drink-vin-chaud-01.jpg" alt="뱅쇼"><figcaption>뱅쇼</figcaption></figure>
+  </div>
+
+  <p class="intro" style="left:284px; top:1px; width:373px; height:50px; line-height:16.7px">Roastery cafe 엘가든은
+ 매장에서 직접 볶은 원두를 사용해
+더 신선하고 풍미있는 커피를 제공하고 있습니다</p>
+
+  <!-- 음료 목록 -->
+  <div class="list">
+    <section>
+      <h2 class="sec">signature</h2>
+      <ul>
+        <li class="item"><span class="name">흑임자크림라떼<b class="best">BEST</b></span><span class="price">8.0</span></li>
+        <li class="item"><span class="name">드립커피<b class="best">BEST</b></span><span class="price">8.0</span></li>
+        <li class="note c" style="width:235px; height:30px">&lt;원두&gt; 카페인: 과테말라•브라질 블렌딩
+디카페인: 콜롬비아 수프리모</li>
+      </ul>
+    </section>
+    <section style="margin-top:8px">
+      <h2 class="sec">coffee<span class="extra">샷 추가/ 디카페인<b>0.5</b></span></h2>
+      <ul style="padding-top:2px">
+        <li class="item"><span class="name">아메리카노</span><span class="price">6.0</span></li>
+        <li class="note r" style="width:306px; height:30px">&lt;원두&gt; 하우스 블렌딩, 콜롬비아 수프리모 (디카페인)
+中 택 1</li>
+        <li class="item"><span class="name">콜드브루</span><span class="price">7.5</span></li>
+        <li class="item"><span class="name">에스프레소</span><span class="price">5.5</span></li>
+        <li class="item"><span class="name">카페라떼</span><span class="price">7.0</span></li>
+        <li class="item"><span class="name">리얼 바닐라빈 라떼<small>(타히티빈 수제시럽)</small></span><span class="price">7.5</span></li>
+        <li class="item"><span class="name">수제 카라멜 마끼야또</span><span class="price">7.5</span></li>
+        <li class="item"><span class="name">아보카도라떼<b class="ice">only ice</b></span><span class="price">8.0</span></li>
+        <li class="item"><span class="name">아포가토</span><span class="price">7.5</span></li>
+      </ul>
+    </section>
+    <section style="margin-top:16px; padding-left:3px">
+      <h2 class="sec">non-coffee</h2>
+      <ul>
+        <li class="item"><span class="name">말차라떼</span><span class="price">7.5</span></li>
+        <li class="item"><span class="name">초코라떼</span><span class="price">7.5</span></li>
+        <li class="item"><span class="name">망고말차라떼<b class="best">BEST</b><b class="ice">only ice</b></span><span class="price">8.0</span></li>
+        <li class="item"><span class="name">생과일주스</span><span class="price">8.5</span></li>
+        <li class="item"><span class="name">복숭아 아이스티<b class="ice">only ice</b></span><span class="price">6.5</span></li>
+      </ul>
+    </section>
+    <section style="margin-top:56px; padding-left:3px">
+      <h2 class="sec">tea</h2>
+      <ul style="padding-top:2px">
+        <li class="item"><span class="name">자몽차,레몬차<small>(수제청)</small></span><span class="price">7.5</span></li>
+        <li class="item"><span class="name">수제 대추차<b class="best">BEST</b></span><span class="price">8.0</span></li>
+        <li class="item"><span class="name">홍차<small>(포트넘&amp;메이슨-영국산)</small></span><span class="price">7.0</span></li>
+        <li class="note r" style="width:191px">얼그레이</li>
+        <li class="item"><span class="name">허브차<small>(유기농)</small></span><span class="price">7.0</span></li>
+        <li class="note r" style="width:191px">카모마일, 페퍼민트 中 택 1</li>
+        <li class="item"><span class="name">우엉차</span><span class="price">6.5</span></li>
+        <li class="item"><span class="name">뱅쇼<small>(무알콜)</small></span><span class="price">8.5</span></li>
+      </ul>
+    </section>
+    <section style="margin-top:14px">
+      <h2 class="sec">ade&amp;smoothie</h2>
+      <ul style="padding-top:2px">
+        <li class="item"><span class="name">레몬에이드<small>(레몬착즙)</small></span><span class="price">7.5</span></li>
+        <li class="item"><span class="name">자몽에이드<small>(자몽청)</small></span><span class="price">7.5</span></li>
+        <li class="item"><span class="name">요거트스무디</span><span class="price">8.0</span></li>
+        <li class="note r" style="width:191px">망고, 블루베리 中 택 1</li>
+      </ul>
+    </section>
+  </div>
+
+  <div class="vline" style="left:703.5px; top:180px; width:3px; height:720px; background:var(--ink)"></div>
+
+  <!-- 오른쪽 사진 카드: 4열(250px, 간격 42px) -->
+  <div class="cards">
+    <h2 class="sec" style="width:250px">Bing-su<span class="extra" style="right:0; bottom:auto; top:1px; font-size:15px; line-height:14px; text-align:right">아이스크림 추가<b style="font-size:15px; line-height:14px">1.0</b><br>팥 추가<b style="font-size:15px; line-height:14px">2.5</b></span></h2>
+    <div class="cardrow" style="height:373px">
+      <article class="card">
+        <p class="takeout">포장가능</p>
+        <img src="images/bingsu-fresh-mango-01.jpg" alt="生망고빙수">
+        <div class="row"><span class="name">生망고빙수</span></div>
+        <div style="padding-left:14px">
+          <div class="sub"><span>무지개 망고<small class="xs">(태국)</small></span><span class="price">26.5</span></div>
+          <div class="sub"><span>골드 망고</span><span class="price">28.5</span></div>
+          <div class="sub"><span>대만 애플 망고</span><span class="price">30.5</span></div>
+          <div class="sub"><span>제주 애플망고<small class="xs">(6~9월)</small></span><span class="price">35.5</span></div>
+        </div>
+      </article>
+      <article class="card">
+        <p class="takeout dark">포장가능</p>
+        <img src="images/bingsu-red-bean-01.jpg" alt="수제 눈꽃팥빙수">
+        <div class="row"><span class="name">수제 눈꽃팥빙수<small>(저당)</small></span><span class="price">19.5</span></div>
+        <p class="desc" style="padding-left:16px; line-height:25px">(국산팥, 아몬드튀일)</p>
+      </article>
+      <article class="card">
+        <p class="takeout dark">포장가능</p>
+        <img src="images/bingsu-fig-01.jpg" alt="무화과빙수">
+        <div class="row"><span class="name">무화과빙수 (8~10월)</span><span class="price tium">24.5</span></div>
+      </article>
+      <article class="card">
+        <p class="takeout">포장가능</p>
+        <img src="images/brunch-mushroom-panini-01.jpg" alt="머쉬룸 파니니">
+        <div class="row"><span class="name">머쉬룸 파니니</span><span class="price">16.0</span></div>
+        <p class="desc">고소한 치아바타 속에 발사믹 소스로 졸인 버섯과 토마토 치즈를 넣어 만든 파니니</p>
+        <img class="sticker" src="images/badge-new-sticker.svg" alt="NEW!" style="left:-14px; top:0; width:95px; height:81px">
+      </article>
+    </div>
+
+    <h2 class="sec" style="width:370px">Brunch</h2>
+    <div class="cardrow" style="height:334px">
+      <article class="card">
+        <p class="takeout">포장가능</p>
+        <img src="images/brunch-garden-salad-pizza-01.jpg" alt="가든 샐러드 피자">
+        <div class="row"><span class="name">가든 샐러드 피자</span><span class="price">23.9</span></div>
+        <p class="desc">도톰한 도우 위에 신선한 채소와 견과류, 치즈를 올린 피자</p>
+      </article>
+      <article class="card">
+        <p class="takeout">포장가능</p>
+        <img src="images/brunch-squid-ink-gorgonzola-pizza-01.jpg" alt="먹물 고르곤졸라 피자">
+        <div class="row"><span class="name">먹물 고르곤졸라 피자</span><span class="price">21.0</span></div>
+        <p class="desc">수제 먹물 도우 위에 진한 고르곤졸라치즈 향을 가득담은 피자</p>
+      </article>
+      <article class="card">
+        <p class="takeout">포장가능</p>
+        <img src="images/brunch-carrot-rapee-panini-01.jpg" alt="당근라페 파니니">
+        <div class="row"><span class="name">당근라페 파니니 <small>(+ 당근잼)</small></span><span class="price">15.0</span></div>
+        <p class="desc">당근 라페와 모짜렐라치즈 &amp; 체다치즈를 넣어 구운 파니니</p>
+      </article>
+      <aside class="notice" style="margin-top:38px">
+        <p class="main" style="color:var(--red)">1인 1메뉴 주문 부탁드립니다.
+2층은 노키즈 존 입니다.</p>
+        <p class="origin">원산지
+새우 : 태국
+잠봉햄 : 스페인
+베이컨 : 스페인
+쌀 : 이탈리아</p>
+      </aside>
+    </div>
+
+    <div class="cardrow">
+      <article class="card">
+        <img src="images/brunch-perilla-cream-pasta-01.jpg" alt="들깨크림 파스타">
+        <div class="row"><span class="name">들깨크림 파스타</span><span class="price">16.9</span></div>
+        <p class="desc">고소한 들깨크림 소스의 깊은 풍미가 살아있는 크리미 파스타</p>
+      </article>
+      <article class="card">
+        <img src="images/brunch-shrimp-rose-pasta-01.jpg" alt="쉬림프 로제 파스타">
+        <div class="row"><span class="name">쉬림프 로제 파스타</span><span class="price">17.5</span></div>
+        <p class="desc">홀토마토, 새우, 버섯, 고급 동물성크림을 넣은 크리미한 파스타</p>
+      </article>
+      <article class="card">
+        <img src="images/brunch-truffle-mushroom-risotto-01.jpg" alt="트러플 머쉬룸 리조또">
+        <div class="row"><span class="name">트러플 머쉬룸 리조또</span><span class="price">17.5</span></div>
+        <p class="desc">크리미한 버섯리조또에 트러플향을 더한 고소한 리조또</p>
+      </article>
+    </div>
+  </div>
+
+</main>
+<script>
+  // TV 화면 크기에 맞춰 1920x1080 판을 꽉 채운다(기존 이미지 방식과 동일하게 가로·세로 각각 늘림).
+  const board = document.querySelector('.board');
+  const fit = () => { board.style.transform = `scale(${innerWidth / 1920}, ${innerHeight / 1080})`; };
+  addEventListener('resize', fit); fit();
+</script>
+</body>
+</html>

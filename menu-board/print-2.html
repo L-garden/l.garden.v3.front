@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>엘가든 지면메뉴 2 (브런치)</title>
+<link rel="stylesheet" href="board.css">
+<style>
+  .board { width: 1050px; height: 1485px; }
+  .cards { left: 25px; top: 0; width: 1000px; }
+  .cardrow { display: grid; grid-template-columns: 345px 340px 315px; align-items: start; }
+  .cardrow > :nth-child(1) { width: 309px; }
+  .cardrow > :nth-child(2) { width: 310px; }
+  .card .takeout { height: 21px; line-height: 21px; }
+  .card img { height: 344px; }
+  .card .row { height: 34px; }
+  .card .desc { color: var(--grey); margin-top: 1px; }
+  .card .desc.ink { color: var(--ink); }
+</style>
+</head>
+<body>
+<main class="board">
+  <!-- 3열 사진 카드 -->
+  <div class="cards">
+    <div class="cardrow" style="height:495px">
+      <article class="card">
+        <p class="takeout">포장가능</p>
+        <img src="images/brunch-garden-salad-pizza-01.jpg" alt="가든 샐러드 피자">
+        <div class="row"><span class="name">가든 샐러드 피자</span><span class="price">23.9</span></div>
+        <p class="desc">도톰한 도우 위에 신선한 채소와 견과류, 치즈를 올린 피자</p>
+      </article>
+      <article class="card">
+        <p class="takeout">포장가능</p>
+        <img src="images/brunch-squid-ink-gorgonzola-pizza-01.jpg" alt="먹물 고르곤졸라 피자">
+        <div class="row"><span class="name">먹물 고르곤졸라 피자</span><span class="price">21.0</span></div>
+        <p class="desc">수제 먹물 도우 위에 버섯과 진한 고르곤졸라치즈 향을 가득담은 피자</p>
+      </article>
+      <article class="card">
+        <p class="takeout"></p>
+        <img src="images/brunch-truffle-mushroom-risotto-01.jpg" alt="트러플 머쉬룸 리조또">
+        <div class="row"><span class="name">트러플 머쉬룸 리조또</span><span class="price">17.5</span></div>
+        <p class="desc ink">크리미한 버섯리조또에 트러플향을 더한 고소한 리조또</p>
+      </article>
+    </div>
+
+    <div class="cardrow" style="height:515px">
+      <article class="card">
+        <p class="takeout">포장가능</p>
+        <img src="images/brunch-carrot-rapee-panini-01.jpg" alt="당근라페 파니니">
+        <div class="row"><span class="name">당근라페 파니니 <small>(+ 당근잼)</small></span><span class="price">15.0</span></div>
+        <p class="desc">당근 라페와 모짜렐라치즈 &amp; 체다치즈를 넣어 구운 파니니</p>
+      </article>
+      <article class="card">
+        <p class="takeout">포장가능</p>
+        <img src="images/brunch-mushroom-panini-01.jpg" alt="머쉬룸 파니니">
+        <div class="row"><span class="name">머쉬룸 파니니</span><span class="price">16.0</span></div>
+        <p class="desc">고소한 치아바타 속에 발사믹 소스로 졸인 버섯과 토마토 치즈를 넣어 만든 파니니</p>
+      </article>
+    </div>
+
+    <div class="cardrow">
+      <article class="card">
+        <img src="images/brunch-perilla-cream-pasta-01.jpg" alt="들깨크림 파스타">
+        <div class="row"><span class="name">들깨크림 파스타</span><span class="price">16.9</span></div>
+        <p class="desc ink">고소한 들깨크림 소스의 깊은 풍미가 살아있는 크리미 파스타</p>
+      </article>
+      <article class="card">
+        <img src="images/brunch-shrimp-rose-pasta-01.jpg" alt="쉬림프 로제 파스타">
+        <div class="row"><span class="name">쉬림프 로제 파스타</span><span class="price">17.5</span></div>
+        <p class="desc ink">홀토마토, 새우, 버섯, 고급 동물성크림을 넣은 크리미한 파스타</p>
+      </article>
+      <aside class="notice" style="width:250px; margin:70px auto 0">
+        <p class="main">1인 1음료 주문 부탁드립니다.
+2층은 노키즈 존 입니다.</p>
+        <p class="origin">원산지
+새우 : 태국
+잠봉햄 : 스페인
+베이컨 : 스페인
+쌀 : 이탈리아</p>
+      </aside>
+    </div>
+  </div>
+</main>
+</body>
+</html>

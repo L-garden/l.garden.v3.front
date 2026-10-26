@@ -42,3 +42,5 @@ next-env.d.ts
 
 # intelliJ
 .idea
+# menu-board 빌드 복사본 (원본은 /menu-board)
+/public/menu-board

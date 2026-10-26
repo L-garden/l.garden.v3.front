@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>엘가든 지면메뉴 1 (음료·빙수)</title>
+<link rel="stylesheet" href="board.css">
+<style>
+  .board { width: 1050px; height: 1485px; --row: 34.5px; --sec-h: 42px; }
+  .sec { line-height: 35px; }
+  .sec .extra, .sec .extra b { font-size: 15px; }
+  .sec .extra { right: 0; bottom: 2px; }
+  .item small.xs { font-size: 15px; }
+  .list.drinks { left: 25px; top: 72px; width: 486px; }
+  .list.bingsu { left: 539px; top: 72px; width: 486px; }
+  .bingsu-photos { left: 621px; top: 433px; width: 327px; display: grid; row-gap: 7px; }
+  .bingsu-photos img { width: 327px; height: 346px; }
+</style>
+</head>
+<body>
+<main class="board">
+
+  <p class="intro" style="left:536px; top:0; width:489px; height:69px">Roastery cafe 엘가든은
+ 매장에서 직접 볶은 원드를 사용해
+더 신선하고 풍미있는 커피를 제공하고 있습니다</p>
+
+  <!-- 왼쪽: 음료 -->
+  <div class="list drinks">
+    <section>
+      <h2 class="sec">signature</h2>
+      <ul style="padding-top:1px">
+        <li class="item"><span class="name">흑임자크림라떼<b class="best">BEST</b></span><span class="price">8.0</span></li>
+        <li class="item"><span class="name">드립커피<b class="best">BEST</b></span><span class="price">8.0</span></li>
+        <li class="note r" style="width:306px; height:41px">&lt;원두&gt; 카페인: 과테말라•브라질 블렌딩
+디카페인: 콜롬비아 수프리모</li>
+      </ul>
+    </section>
+    <section>
+      <h2 class="sec">coffee<span class="extra">샷 추가/ 디카페인<b>0.5</b></span></h2>
+      <ul style="padding-top:3px">
+        <li class="item"><span class="name">아메리카노</span><span class="price">6.0</span></li>
+        <li class="item"><span class="name">콜드브루</span><span class="price">7.5</span></li>
+        <li class="item"><span class="name">에스프레소</span><span class="price">5.5</span></li>
+        <li class="item"><span class="name">카페라떼</span><span class="price">7.0</span></li>
+        <li class="item"><span class="name">리얼 바닐라빈 라떼<small>(타히티빈 수제시럽)</small></span><span class="price">7.5</span></li>
+        <li class="item"><span class="name">수제 카라멜 마끼야또</span><span class="price">7.5</span></li>
+        <li class="item"><span class="name">아보카도라떼<b class="ice">only ice</b></span><span class="price">8.0</span></li>
+        <li class="item"><span class="name">아포가토</span><span class="price">8.5</span></li>
+      </ul>
+    </section>
+    <section style="margin-top:12px; padding-left:5px">
+      <h2 class="sec">non-coffee</h2>
+      <ul>
+        <li class="item"><span class="name">말차라떼</span><span class="price">7.5</span></li>
+        <li class="item"><span class="name">초코라떼</span><span class="price">7.5</span></li>
+        <li class="item"><span class="name">쑥라떼</span><span class="price">7.0</span></li>
+        <li class="item"><span class="name">망고말차라떼<b class="best">BEST</b><b class="ice">only ice</b></span><span class="price">8.0</span></li>
+        <li class="item"><span class="name">생과일주스</span><span class="price">8.5</span></li>
+        <li class="item"><span class="name">복숭아 아이스티<b class="ice">only ice</b></span><span class="price">6.5</span></li>
+      </ul>
+    </section>
+    <section style="margin-top:105px; padding-left:5px">
+      <h2 class="sec" style="height:47px">tea</h2>
+      <ul style="padding-top:1px">
+        <li class="item"><span class="name">자몽차,레몬차<small>(수제청)</small></span><span class="price">7.5</span></li>
+        <li class="item"><span class="name">수제 대추차<b class="best">BEST</b></span><span class="price">8.0</span></li>
+        <li class="item"><span class="name">홍차<small>(포트넘&amp;메이슨-영국산)</small></span><span class="price">7.0</span></li>
+        <li class="note r" style="width:212px">얼그레이</li>
+        <li class="item"><span class="name">우엉차</span><span class="price">6.5</span></li>
+        <li class="item"><span class="name">허브차<small>(유기농)</small></span><span class="price">7.0</span></li>
+        <li class="note r" style="width:193px">카모마일, 페퍼민트 中 택 1</li>
+        <li class="item"><span class="name">뱅쇼<small>(무알콜)</small></span><span class="price">8.0</span></li>
+      </ul>
+    </section>
+    <section style="margin-top:14px">
+      <h2 class="sec">ade&amp;smoothie</h2>
+      <ul style="padding-top:3px">
+        <li class="item"><span class="name">레몬에이드<small>(레몬착즙)</small></span><span class="price">7.5</span></li>
+        <li class="item"><span class="name">자몽에이드<small>(자몽청)</small></span><span class="price">7.5</span></li>
+        <li class="item"><span class="name">요거트스무디</span><span class="price">8.0</span></li>
+        <li class="note r" style="width:217px">망고, 블루베리 中 택 1</li>
+      </ul>
+    </section>
+  </div>
+
+  <!-- 오른쪽: 빙수 -->
+  <div class="list bingsu">
+    <section>
+      <h2 class="sec" style="height:45px">Bing-su<span class="extra" style="right:5px">아이스크림 추가<b>1.0</b></span></h2>
+      <ul style="padding-right:5px">
+        <li class="item"><span class="name">生망고빙수</span></li>
+        <li class="item" style="padding-left:42px"><span class="name">무지개 망고<small>(태국)</small></span><span class="price">26.5</span></li>
+        <li class="item" style="padding-left:42px"><span class="name">골드 망고</span><span class="price">28.5</span></li>
+        <li class="item" style="padding-left:42px"><span class="name">페루 애플 망고</span><span class="price">30.5</span></li>
+        <li class="item" style="padding-left:42px"><span class="name">제주 애플망고<small>(6~9월)</small></span><span class="price">35.5</span></li>
+        <li class="item"><span class="name">무화과빙수</span><span class="price">24.5</span></li>
+        <li class="item"><span class="name">수제 눈꽃팥빙수<small>(저당)</small></span><span class="price">19.5</span></li>
+        <li class="note" style="padding-left:42px">(국산팥, 아몬드튀일)</li>
+      </ul>
+    </section>
+  </div>
+
+  <div class="bingsu-photos">
+    <img src="images/bingsu-fresh-mango-02.jpg" alt="生망고빙수">
+    <img src="images/bingsu-fig-01.jpg" alt="무화과빙수">
+    <img src="images/bingsu-red-bean-01.jpg" alt="수제 눈꽃팥빙수">
+  </div>
+
+</main>
+</body>
+</html>
