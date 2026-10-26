@@ -1,7 +1,8 @@
-// 시즌 장식: 반투명한 작은 조각들이 판 전체를 살랑살랑 떠다닌다(메뉴 위로도 지나감, 클릭 등은 막지 않음).
+// 시즌 장식 (TV 메뉴판 전용 — 지면메뉴는 인쇄용이라 쓰지 않는다).
+// 반투명한 작은 조각들이 판 전체를 살랑살랑 떠다닌다(메뉴 위로도 지나감, 클릭 등은 막지 않음).
 // ── 설정: 슬랙봇은 이 줄만 고친다 ──
 //   'auto' = 날짜에 맞춰 자동 / 'off' = 끔 / 테마 이름 = 그 테마로 고정
-const SEASON = { tv: 'auto', print: 'off' };
+const SEASON = 'auto';
 
 // ── 조각 모양 (24x24 SVG) ──
 const svg = body => `<svg viewBox="0 0 24 24" width="100%" height="100%">${body}</svg>`;
@@ -98,7 +99,7 @@ function applySeason() {
   const board = document.querySelector('.board');
   // 미리보기용: ?season=christmas 또는 #season=christmas
   const forced = new URLSearchParams(location.search).get('season') || location.hash.match(/season=(\w+)/)?.[1];
-  const mode = forced || SEASON[board.dataset.kind] || 'off';
+  const mode = forced || SEASON;
   const theme = mode === 'auto' ? seasonFor(new Date()) : mode in THEMES ? mode : '';
   if (board.dataset.season === theme) return;
   board.dataset.season = theme;
