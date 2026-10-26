@@ -1,8 +1,13 @@
 // 시즌 장식 (TV 메뉴판 전용 — 지면메뉴는 인쇄용이라 쓰지 않는다).
 // 반투명한 작은 조각들이 판 전체를 살랑살랑 떠다닌다(메뉴 위로도 지나감, 클릭 등은 막지 않음).
-// ── 설정: 슬랙봇은 이 줄만 고친다 ──
-//   'auto' = 날짜에 맞춰 자동 / 'off' = 끔 / 테마 이름 = 그 테마로 고정
-const SEASON = 'auto';
+// ── 설정: 슬랙봇은 이 두 곳만 고친다 ──
+// 켤 테마만 true. 켜진 테마는 아래 기간(FIXED·LUNAR)에만 자동으로 나온다. 기본은 모두 꺼짐.
+const ENABLED = {
+  spring: false, summer: false, snow: false, seollal: false, chuseok: false, buddha: false, valentine: false,
+  taegeuk: false, family: false, hangul: false, halloween: false, pepero: false, christmas: false,
+};
+// 기간과 상관없이 지금 바로 띄울 테마 이름. 없으면 ''
+const FORCE = '';
 
 // ── 조각 모양 (24x24 SVG) ──
 const svg = body => `<svg viewBox="0 0 24 24" width="100%" height="100%">${body}</svg>`;
@@ -29,19 +34,19 @@ const S = {
 
 // ── 테마: motion = fall(내려옴) | rise(떠오름) | float(가로로 떠다님), twinkle = 반짝임 ──
 const THEMES = {
-  spring: { motion: 'fall', sprites: [S.petal('#f3a6bd'), S.petal('#f7c6d4'), S.petal('#fbe0e8')] },
-  summer: { motion: 'rise', sprites: [S.bubble('#77bef0'), S.bubble('#9fd0f2'), S.star('#ffcf4a')], twinkle: true },
-  snow: { motion: 'fall', sprites: [S.flake('#8cc4ec'), S.flake('#b5daf5'), S.dot('#c8e4f7')] },
-  seollal: { motion: 'fall', sprites: [S.pouch('#fa6868'), S.pouch('#77bef0'), S.coin(), S.star('#ffcf4a')], twinkle: true },
-  chuseok: { motion: 'fall', sprites: [S.maple('#ff894f'), S.maple('#fa6868'), S.ginkgo('#ffcf4a')] },
-  buddha: { motion: 'rise', sprites: [S.lantern('#fa6868'), S.lantern('#64bb68'), S.lantern('#ffcf4a'), S.lantern('#f3a6bd')] },
-  valentine: { motion: 'rise', sprites: [S.heart('#fa6868'), S.heart('#f3a6bd'), S.heart('#e04f5f')] },
-  taegeuk: { motion: 'fall', sprites: [S.mugunghwa(), S.petal('#f3a6bd'), S.dot('#0047a0'), S.dot('#cd2e3a')] },
-  family: { motion: 'fall', sprites: [S.carnation('#fa6868'), S.carnation('#f3a6bd'), S.heart('#f3a6bd')] },
-  hangul: { motion: 'float', sprites: ['ㄱ', 'ㄴ', 'ㄷ', 'ㅎ', 'ㅏ', 'ㅑ', 'ㅗ'].map((ch, i) => S.jamo(['#64bb68', '#77bef0', '#ff894f', '#fa6868'][i % 4], ch)) },
-  halloween: { motion: 'float', sprites: [S.bat('#3b2e4a'), S.bat('#57595b'), S.pumpkin(), S.star('#ff894f')], twinkle: true },
-  pepero: { motion: 'fall', sprites: [S.pepero('#7b542f'), S.pepero('#f3a6bd'), S.pepero('#57595b')] },
-  christmas: { motion: 'fall', sprites: [S.flake('#8cc4ec'), S.ornament('#fa6868'), S.ornament('#64bb68'), S.star('#ffcf4a')], twinkle: true },
+  spring: { name: '봄(벚꽃)', motion: 'fall', sprites: [S.petal('#f3a6bd'), S.petal('#f7c6d4'), S.petal('#fbe0e8')] },
+  summer: { name: '여름', motion: 'rise', sprites: [S.bubble('#77bef0'), S.bubble('#9fd0f2'), S.star('#ffcf4a')], twinkle: true },
+  snow: { name: '겨울(눈)', motion: 'fall', sprites: [S.flake('#8cc4ec'), S.flake('#b5daf5'), S.dot('#c8e4f7')] },
+  seollal: { name: '설날', motion: 'fall', sprites: [S.pouch('#fa6868'), S.pouch('#77bef0'), S.coin(), S.star('#ffcf4a')], twinkle: true },
+  chuseok: { name: '추석', motion: 'fall', sprites: [S.maple('#ff894f'), S.maple('#fa6868'), S.ginkgo('#ffcf4a')] },
+  buddha: { name: '석가탄신일', motion: 'rise', sprites: [S.lantern('#fa6868'), S.lantern('#64bb68'), S.lantern('#ffcf4a'), S.lantern('#f3a6bd')] },
+  valentine: { name: '발렌타인·화이트데이', motion: 'rise', sprites: [S.heart('#fa6868'), S.heart('#f3a6bd'), S.heart('#e04f5f')] },
+  taegeuk: { name: '삼일절·광복절', motion: 'fall', sprites: [S.mugunghwa(), S.petal('#f3a6bd'), S.dot('#0047a0'), S.dot('#cd2e3a')] },
+  family: { name: '가정의 달', motion: 'fall', sprites: [S.carnation('#fa6868'), S.carnation('#f3a6bd'), S.heart('#f3a6bd')] },
+  hangul: { name: '한글날', motion: 'float', sprites: ['ㄱ', 'ㄴ', 'ㄷ', 'ㅎ', 'ㅏ', 'ㅑ', 'ㅗ'].map((ch, i) => S.jamo(['#64bb68', '#77bef0', '#ff894f', '#fa6868'][i % 4], ch)) },
+  halloween: { name: '할로윈', motion: 'float', sprites: [S.bat('#3b2e4a'), S.bat('#57595b'), S.pumpkin(), S.star('#ff894f')], twinkle: true },
+  pepero: { name: '빼빼로데이', motion: 'fall', sprites: [S.pepero('#7b542f'), S.pepero('#f3a6bd'), S.pepero('#57595b')] },
+  christmas: { name: '크리스마스', motion: 'fall', sprites: [S.flake('#8cc4ec'), S.ornament('#fa6868'), S.ornament('#64bb68'), S.star('#ffcf4a')], twinkle: true },
 };
 
 // 음력 명절의 양력 날짜 — 해마다 이어서 적을 것. [이름, 날짜들, 며칠 전부터, 며칠 후까지]
@@ -63,9 +68,9 @@ function seasonFor(date) {
   const day = d => Math.floor(Date.UTC(d.getFullYear(), d.getMonth(), d.getDate()) / 864e5);
   const today = day(date);
   for (const [name, dates, before, after] of LUNAR)
-    for (const s of dates) { const t = day(new Date(s + 'T00:00')); if (today >= t - before && today <= t + after) return name; }
+    for (const s of ENABLED[name] ? dates : []) { const t = day(new Date(s + 'T00:00')); if (today >= t - before && today <= t + after) return name; }
   const md = `${String(date.getMonth() + 1).padStart(2, '0')}-${String(date.getDate()).padStart(2, '0')}`;
-  return FIXED.find(([, from, to]) => md >= from && md <= to)?.[0] || '';
+  return FIXED.find(([name, from, to]) => ENABLED[name] && md >= from && md <= to)?.[0] || '';
 }
 
 const rnd = (a, b) => a + Math.random() * (b - a);
@@ -99,11 +104,14 @@ function applySeason() {
   const board = document.querySelector('.board');
   // 미리보기용: ?season=christmas 또는 #season=christmas
   const forced = new URLSearchParams(location.search).get('season') || location.hash.match(/season=(\w+)/)?.[1];
-  const mode = forced || SEASON;
-  const theme = mode === 'auto' ? seasonFor(new Date()) : mode in THEMES ? mode : '';
+  const pick = forced || FORCE;
+  const theme = pick ? (pick in THEMES ? pick : '') : seasonFor(new Date());
   if (board.dataset.season === theme) return;
   board.dataset.season = theme;
   scatter(board, theme);
 }
-applySeason();
-setInterval(applySeason, 3600e3); // TV는 켜 둔 채로 날짜가 바뀌므로 매시간 다시 고른다
+// 브라우저에서만 실행 (슬랙봇은 node에서 이 파일을 읽어 켜짐/꺼짐 상태를 보여 준다)
+if (typeof document !== 'undefined') {
+  applySeason();
+  setInterval(applySeason, 3600e3); // TV는 켜 둔 채로 날짜가 바뀌므로 매시간 다시 고른다
+}

@@ -56,7 +56,9 @@
 
 TV 메뉴판(`tv.html`)에만 쓴다. 지면메뉴는 인쇄용이라 넣지 않는다. `season.js`가 반투명한 작은 조각(눈송이, 꽃잎, 하트, 연등 등)을 판 전체에 띄운다. 조각은 메뉴 위로도 천천히 흩날리지만 반투명이라 글자를 가리지 않는다. 고정된 칸을 쓰지 않으므로 메뉴가 늘어나도 손댈 곳이 없다.
 
-- 켜기/끄기는 맨 위의 `SEASON = 'auto'`만 고친다. 값은 `'auto'`(날짜에 맞춰 자동), `'off'`, 또는 테마 이름(고정)이다.
+- 테마별 켜기/끄기는 맨 위 `ENABLED`의 true/false만 고친다(기본 모두 꺼짐). 켜진 테마는 자기 기간에만 나온다.
+- 기간과 상관없이 바로 띄우려면 `FORCE`에 테마 이름을 넣는다(끄려면 `''`).
+- 슬랙에서 `@l-garden-ai-manager 장식`이라고 보내면 테마별 기간·켜짐 여부·지금 표시 중인 테마를 보여 준다.
 - 테마: spring, summer, snow, seollal(설), chuseok(추석), buddha(석가탄신일), valentine(발렌타인·화이트데이), taegeuk(삼일절·광복절), family(가정의 달), hangul(한글날), halloween, pepero, christmas
 - 자동 기간은 `FIXED`(양력)와 `LUNAR`(음력 명절의 양력 날짜)에 있다. 음력 날짜는 해마다 이어서 적는다.
 - 미리보기: `tv.html#season=christmas`
