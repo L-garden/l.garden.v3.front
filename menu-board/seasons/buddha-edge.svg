@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 160">
+<style>.p{transform-origin:20px 0;animation:sw 3.4s ease-in-out infinite}.p2{animation-delay:-1.7s}@keyframes sw{0%,100%{transform:rotate(-6deg)}50%{transform:rotate(6deg)}}.g{animation:gl 1.8s ease-in-out infinite}@keyframes gl{0%,100%{opacity:.5}50%{opacity:.15}}</style>
+<g class="p"><line x1="20" y1="0" x2="20" y2="26" stroke="#57595b"/><circle class="g" cx="20" cy="42" r="17" fill="#ffcf4a"/><path d="M8 34q12-10 24 0v16q-12 10-24 0z" fill="#fa6868"/><path d="M8 42h24M20 32v20" stroke="#ff9c9c" stroke-width="1.5"/><path d="M17 56l-2 8M23 56l2 8M20 56v9" stroke="#ffcf4a"/></g>
+<g transform="translate(0 80)"><g class="p p2"><line x1="20" y1="0" x2="20" y2="26" stroke="#57595b"/><circle class="g" cx="20" cy="42" r="17" fill="#ffcf4a"/><path d="M8 34q12-10 24 0v16q-12 10-24 0z" fill="#64bb68"/><path d="M8 42h24M20 32v20" stroke="#9ad49d" stroke-width="1.5"/><path d="M17 56l-2 8M23 56l2 8M20 56v9" stroke="#ffcf4a"/></g></g>
+</svg>

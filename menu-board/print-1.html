@@ -17,7 +17,7 @@
 </style>
 </head>
 <body>
-<main class="board">
+<main class="board" data-kind="print">
 
   <p class="intro" style="left:536px; top:0; width:489px; height:69px">Roastery cafe 엘가든은
  매장에서 직접 볶은 원두를 사용해
@@ -105,6 +105,13 @@
     <img src="images/bingsu-red-bean-01.jpg" alt="수제 눈꽃팥빙수">
   </div>
 
+  <!-- 시즌 장식 칸: 메뉴가 없는 빈 영역. 메뉴 배치가 바뀌어 겹치면 칸 위치를 옮긴다 -->
+  <div class="season" aria-hidden="true">
+    <i class="slot edge" style="left:0px; top:0; width:22px; height:1485px"></i>
+    <i class="slot edge" style="left:1028px; top:0; width:22px; height:1485px"></i>
+  </div>
+
 </main>
+<script src="season.js"></script>
 </body>
 </html>

@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 160">
+<style>
+.bat{transform-origin:20px 0;animation:sw 2.6s ease-in-out infinite}
+@keyframes sw{0%,100%{transform:rotate(-12deg)}50%{transform:rotate(12deg)}}
+.st{animation:tw 2s ease-in-out infinite}.st2{animation-delay:1s}
+@keyframes tw{0%,100%{opacity:1}50%{opacity:.2}}
+</style>
+<g class="bat"><line x1="20" y1="0" x2="20" y2="40" stroke="#57595b" stroke-width="1"/><path d="M20 40c-3 0-5 3-6 5-3-3-8-3-12 0 3 1 5 4 5 7 3-2 7-2 9 0 1-2 2-3 4-3s3 1 4 3c2-2 6-2 9 0 0-3 2-6 5-7-4-3-9-3-12 0-1-2-3-5-6-5z" fill="#3b2e4a"/><circle cx="18" cy="45" r="1" fill="#ffcf4a"/><circle cx="22" cy="45" r="1" fill="#ffcf4a"/></g>
+<path class="st" d="M10 100l2 5 5 2-5 2-2 5-2-5-5-2 5-2z" fill="#ff894f"/>
+<path class="st st2" d="M30 132l1.6 4 4 1.6-4 1.6-1.6 4-1.6-4-4-1.6 4-1.6z" fill="#ffcf4a"/>
+</svg>

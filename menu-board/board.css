@@ -71,3 +71,24 @@ small.xs { font-size: 10px; }
 .notice .origin { height: 88px; margin-top: -5px; font-size: 15px; color: var(--grey); line-height: 17.6px; }
 
 .intro { font-size: 15px; color: var(--brown); text-align: right; white-space: pre; display: flex; flex-direction: column; justify-content: center; }
+
+/* ── 시즌 장식 (season.js가 .board[data-season]을 정한다) ───────────
+   .season 안의 .slot은 메뉴가 없는 빈 칸. 장식은 그 칸 안에서만 움직인다. */
+.season { display: none; inset: 0; pointer-events: none; z-index: 5; }
+.board:not([data-season=""]) .season { display: block; }
+.season .slot { position: absolute; background-repeat: no-repeat; background-position: center top; background-size: contain; }
+.season .edge { background-repeat: repeat-y; background-size: 100% auto; }
+.season-msg { font-style: normal; font-weight: 300; position: absolute; left: 0; right: 0; bottom: 8px; text-align: center; font-size: 22px; line-height: 1.2; color: var(--season, var(--ink)); }
+[data-season="spring"] { --season: #e07a9a; } [data-season="spring"] .edge { background-image: url(seasons/spring-edge.svg); } [data-season="spring"] .feature { background-image: url(seasons/spring-feature.svg); }
+[data-season="summer"] { --season: #3a9ad9; } [data-season="summer"] .edge { background-image: url(seasons/summer-edge.svg); } [data-season="summer"] .feature { background-image: url(seasons/summer-feature.svg); }
+[data-season="snow"] { --season: #5aa7d8; } [data-season="snow"] .edge { background-image: url(seasons/snow-edge.svg); } [data-season="snow"] .feature { background-image: url(seasons/snow-feature.svg); }
+[data-season="seollal"] { --season: #fa6868; } [data-season="seollal"] .edge { background-image: url(seasons/seollal-edge.svg); } [data-season="seollal"] .feature { background-image: url(seasons/seollal-feature.svg); }
+[data-season="chuseok"] { --season: #c9821e; } [data-season="chuseok"] .edge { background-image: url(seasons/chuseok-edge.svg); } [data-season="chuseok"] .feature { background-image: url(seasons/chuseok-feature.svg); }
+[data-season="buddha"] { --season: #d4553f; } [data-season="buddha"] .edge { background-image: url(seasons/buddha-edge.svg); } [data-season="buddha"] .feature { background-image: url(seasons/buddha-feature.svg); }
+[data-season="valentine"] { --season: #fa6868; } [data-season="valentine"] .edge { background-image: url(seasons/valentine-edge.svg); } [data-season="valentine"] .feature { background-image: url(seasons/valentine-feature.svg); }
+[data-season="taegeuk"] { --season: #0047a0; } [data-season="taegeuk"] .edge { background-image: url(seasons/taegeuk-edge.svg); } [data-season="taegeuk"] .feature { background-image: url(seasons/taegeuk-feature.svg); }
+[data-season="family"] { --season: #e04f5f; } [data-season="family"] .edge { background-image: url(seasons/family-edge.svg); } [data-season="family"] .feature { background-image: url(seasons/family-feature.svg); }
+[data-season="hangul"] { --season: #4f9d58; } [data-season="hangul"] .edge { background-image: url(seasons/hangul-edge.svg); } [data-season="hangul"] .feature { background-image: url(seasons/hangul-feature.svg); }
+[data-season="halloween"] { --season: #e8742f; } [data-season="halloween"] .edge { background-image: url(seasons/halloween-edge.svg); } [data-season="halloween"] .feature { background-image: url(seasons/halloween-feature.svg); }
+[data-season="pepero"] { --season: #7b542f; } [data-season="pepero"] .edge { background-image: url(seasons/pepero-edge.svg); } [data-season="pepero"] .feature { background-image: url(seasons/pepero-feature.svg); }
+[data-season="christmas"] { --season: #d63b3b; } [data-season="christmas"] .edge { background-image: url(seasons/christmas-edge.svg); } [data-season="christmas"] .feature { background-image: url(seasons/christmas-feature.svg); }

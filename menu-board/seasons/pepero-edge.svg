@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 160">
+<style>
+.f{animation:fall 8s linear infinite}
+@keyframes fall{0%{transform:translate(0,0) rotate(0)}25%{transform:translate(6px,40px) rotate(60deg)}50%{transform:translate(-5px,80px) rotate(120deg)}75%{transform:translate(5px,120px) rotate(200deg)}100%{transform:translate(0,160px) rotate(360deg)}}
+</style>
+<defs><g id="s"><rect x="-1.5" y="-9" width="3" height="18" rx="1.5" fill="#e8d5b0"/><rect x="-2.3" y="-9" width="4.6" height="12" rx="2.3"/></g></defs>
+<g class="f"><use href="#s" x="12" y="18" fill="#7b542f"/><use href="#s" x="28" y="72" fill="#f3a6bd"/><use href="#s" x="13" y="124" fill="#57595b"/><use href="#s" x="12" y="-142" fill="#7b542f"/><use href="#s" x="28" y="-88" fill="#f3a6bd"/><use href="#s" x="13" y="-36" fill="#57595b"/></g>
+</svg>

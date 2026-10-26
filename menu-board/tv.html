@@ -18,7 +18,7 @@
 </style>
 </head>
 <body>
-<main class="board">
+<main class="board" data-kind="tv">
 
   <!-- 왼쪽 음료 사진 4장 -->
   <div class="photos">
@@ -179,7 +179,15 @@
     </div>
   </div>
 
+  <!-- 시즌 장식 칸: 메뉴가 없는 빈 영역. 메뉴 배치가 바뀌어 겹치면 칸 위치를 옮긴다 -->
+  <div class="season" aria-hidden="true">
+    <i class="slot edge" style="left:709px; top:0; width:41px; height:1080px"></i>
+    <i class="slot edge" style="left:1882px; top:0; width:38px; height:1080px"></i>
+    <i class="slot feature" style="left:1629px; top:700px; width:250px; height:375px"><b class="season-msg"></b></i>
+  </div>
+
 </main>
+<script src="season.js"></script>
 <script>
   // TV 화면 크기에 맞춰 1920x1080 판을 꽉 채운다(기존 이미지 방식과 동일하게 가로·세로 각각 늘림).
   const board = document.querySelector('.board');

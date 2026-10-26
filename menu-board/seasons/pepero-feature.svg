@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 250 300">
+<style>.s{transform-origin:0 0;animation:sw 2.4s ease-in-out infinite}.s2{animation-delay:-.8s}.s3{animation-delay:-1.6s}@keyframes sw{0%,100%{transform:rotate(-4deg)}50%{transform:rotate(4deg)}}
+.t{animation:tw 1.6s ease-in-out infinite}@keyframes tw{0%,100%{opacity:1}50%{opacity:.2}}</style>
+<defs><g id="st"><rect x="-5" y="-150" width="10" height="150" rx="5" fill="#e8d5b0"/><rect x="-7" y="-150" width="14" height="100" rx="7"/></g></defs>
+<g transform="translate(90 220)"><g class="s"><use href="#st" fill="#7b542f"/></g></g>
+<g transform="translate(125 225)"><g class="s s2"><use href="#st" fill="#f3a6bd"/></g></g>
+<g transform="translate(160 220)"><g class="s s3"><use href="#st" fill="#57595b"/></g></g>
+<rect x="65" y="200" width="120" height="80" rx="8" fill="#fa6868"/><path d="M65 225h120" stroke="#fff" stroke-width="4"/><path d="M125 200v80" stroke="#ffcf4a" stroke-width="6"/>
+<path class="t" d="M40 80l2.5 7 7 2.5-7 2.5-2.5 7-2.5-7-7-2.5 7-2.5z" fill="#ffcf4a"/><path class="t" style="animation-delay:.8s" d="M210 120l2 6 6 2-6 2-2 6-2-6-6-2 6-2z" fill="#ffcf4a"/>
+</svg>

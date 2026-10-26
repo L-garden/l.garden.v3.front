@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 160">
+<style>
+.p{transform-origin:20px 0;animation:sw 3s ease-in-out infinite}.p2{animation-delay:-1.5s}
+@keyframes sw{0%,100%{transform:rotate(-8deg)}50%{transform:rotate(8deg)}}
+.st{animation:tw 1.8s ease-in-out infinite}
+@keyframes tw{0%,100%{opacity:1}50%{opacity:.2}}
+</style>
+<g class="p"><line x1="20" y1="0" x2="20" y2="28" stroke="#c9a227" stroke-width="1"/><path d="M14 30q6 4 12 0l6 10q8 22-12 24-20-2-12-24z" fill="#fa6868"/><path d="M12 33h16" stroke="#ffcf4a" stroke-width="2.5" stroke-linecap="round"/><circle cx="20" cy="50" r="3.5" fill="#ffcf4a"/></g>
+<g transform="translate(0 80)"><g class="p p2"><line x1="20" y1="0" x2="20" y2="28" stroke="#c9a227" stroke-width="1"/><path d="M14 30q6 4 12 0l6 10q8 22-12 24-20-2-12-24z" fill="#77bef0"/><path d="M12 33h16" stroke="#ffcf4a" stroke-width="2.5" stroke-linecap="round"/><circle cx="20" cy="50" r="3.5" fill="#ffcf4a"/></g></g>
+<path class="st" d="M32 72l1.5 3.5 3.5 1.5-3.5 1.5-1.5 3.5-1.5-3.5-3.5-1.5 3.5-1.5z" fill="#ffcf4a"/>
+</svg>

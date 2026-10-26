@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 250 300">
+<style>
+.pouch{transform-origin:125px 40px;animation:sw 3.2s ease-in-out infinite}
+@keyframes sw{0%,100%{transform:rotate(-6deg)}50%{transform:rotate(6deg)}}
+.st{animation:tw 1.6s ease-in-out infinite}.st:nth-child(2){animation-delay:.5s}.st:nth-child(3){animation-delay:1s}
+@keyframes tw{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.2;transform:scale(.6)}}
+</style>
+<g fill="#ffcf4a"><path class="st" style="transform-origin:40px 70px" d="M40 58l3 9 9 3-9 3-3 9-3-9-9-3 9-3z"/><path class="st" style="transform-origin:210px 120px" d="M210 110l2.5 7.5 7.5 2.5-7.5 2.5-2.5 7.5-2.5-7.5-7.5-2.5 7.5-2.5z"/><path class="st" style="transform-origin:45px 210px" d="M45 202l2 6 6 2-6 2-2 6-2-6-6-2 6-2z"/></g>
+<g class="pouch">
+<line x1="125" y1="0" x2="125" y2="62" stroke="#c9a227" stroke-width="2"/>
+<path d="M98 70q27 12 54 0l18 30q26 70-45 78-71-8-45-78z" fill="#fa6868"/>
+<path d="M80 150q45 22 90 0" stroke="#fff" stroke-width="5" fill="none" opacity=".6"/>
+<g stroke-width="5"><path d="M85 128q40 14 80 0" stroke="#64bb68" fill="none"/><path d="M83 139q42 15 84 0" stroke="#ffcf4a" fill="none"/><path d="M84 150q41 15 82 0" stroke="#77bef0" fill="none"/></g>
+<path d="M94 74h62" stroke="#ffcf4a" stroke-width="7" stroke-linecap="round"/>
+<circle cx="125" cy="108" r="14" fill="#ffcf4a"/><text x="125" y="114" text-anchor="middle" font-size="16" font-weight="700" fill="#b8860b">福</text>
+</g>
+</svg>

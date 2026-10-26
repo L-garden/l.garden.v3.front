@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 250 300">
+<style>
+.star{transform-origin:125px 34px;animation:sp 2.4s ease-in-out infinite}
+@keyframes sp{0%,100%{transform:scale(1) rotate(0)}50%{transform:scale(1.18) rotate(12deg)}}
+.l{animation:tw 1.6s ease-in-out infinite}.l:nth-child(2n){animation-delay:.5s}.l:nth-child(3n){animation-delay:1s}
+@keyframes tw{0%,100%{opacity:1}50%{opacity:.25}}
+.s{animation:fall 7s linear infinite}.s2{animation-delay:-2.3s}.s3{animation-delay:-4.6s}
+@keyframes fall{from{transform:translateY(-20px)}to{transform:translateY(300px)}}
+</style>
+<g fill="#c8e4f7"><g class="s"><circle cx="30" cy="0" r="3"/><circle cx="210" cy="40" r="2.5"/><circle cx="120" cy="-60" r="2"/></g><g class="s s2"><circle cx="60" cy="10" r="2"/><circle cx="190" cy="-30" r="3"/></g><g class="s s3"><circle cx="20" cy="-40" r="2.5"/><circle cx="235" cy="0" r="2"/></g></g>
+<rect x="113" y="250" width="24" height="30" rx="3" fill="#7b542f"/>
+<path d="M125 50 60 140h28l-40 60h32l-42 58h174l-42-58h32l-40-60h28z" fill="#4f9d58"/>
+<path d="M125 50 60 140h28l-40 60h32l-42 58h87z" fill="#64bb68"/>
+<g><circle class="l" cx="100" cy="125" r="5" fill="#fa6868"/><circle class="l" cx="148" cy="118" r="5" fill="#ffcf4a"/><circle class="l" cx="85" cy="185" r="5" fill="#77bef0"/><circle class="l" cx="160" cy="178" r="5" fill="#fa6868"/><circle class="l" cx="122" cy="160" r="5" fill="#ffcf4a"/><circle class="l" cx="70" cy="240" r="5" fill="#ffcf4a"/><circle class="l" cx="125" cy="228" r="5" fill="#77bef0"/><circle class="l" cx="182" cy="238" r="5" fill="#fa6868"/></g>
+<path class="star" d="M125 14l6 13 14 2-10 10 3 14-13-7-13 7 3-14-10-10 14-2z" fill="#ffcf4a" stroke="#e8a900" stroke-width="1.5"/>
+</svg>
