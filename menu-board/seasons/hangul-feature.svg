@@ -1,6 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 250 300">
-<style>.j{animation:jp 1.8s ease-in-out infinite}.j2{animation-delay:.3s}.j3{animation-delay:.6s}.j4{animation-delay:.9s}.j5{animation-delay:1.2s}@keyframes jp{0%,100%{transform:translateY(0)}40%{transform:translateY(-18px)}}
-text{font-weight:700;text-anchor:middle;font-size:52px}</style>
-<text class="j" x="45" y="120" fill="#64bb68">ㄱ</text><text class="j j2" x="105" y="120" fill="#77bef0">ㄴ</text><text class="j j3" x="165" y="120" fill="#ff894f">ㄷ</text><text class="j j4" x="75" y="210" fill="#fa6868">ㅏ</text><text class="j j5" x="175" y="210" fill="#7b542f">ㅑ</text>
-<path d="M30 250q95 20 190 0" stroke="#c9a227" stroke-width="3" fill="none"/>
-</svg>

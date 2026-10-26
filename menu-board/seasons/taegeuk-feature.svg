@@ -1,8 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 250 300">
-<style>.fl{transform-origin:60px 60px;animation:wave 2.6s ease-in-out infinite}@keyframes wave{0%,100%{transform:skewY(-3deg)}50%{transform:skewY(3deg)}}
-.mu{transform-origin:125px 220px;animation:bl 3.4s ease-in-out infinite}@keyframes bl{0%,100%{transform:scale(1) rotate(-4deg)}50%{transform:scale(1.05) rotate(4deg)}}</style>
-<line x1="58" y1="40" x2="58" y2="170" stroke="#7b542f" stroke-width="4"/>
-<g class="fl"><rect x="60" y="45" width="135" height="90" fill="#fff" stroke="#ddd"/><circle cx="127" cy="90" r="22" fill="#cd2e3a"/><path d="M105 90a22 22 0 0 0 44 0 11 11 0 0 0-22 0 11 11 0 0 1-22 0z" fill="#0047a0"/>
-<g stroke="#1e1e1e" stroke-width="3"><path d="M75 58l12 9M73 61l12 9M71 64l12 9M167 112l12 9M165 115l12 9M163 118l12 9M167 67l12-9M165 64l12-9M163 61l12-9M75 121l12-9M73 118l12-9M71 115l12-9"/></g></g>
-<g class="mu"><g fill="#f3a6bd"><ellipse cx="125" cy="200" rx="18" ry="26"/><ellipse cx="125" cy="200" rx="18" ry="26" transform="rotate(72 125 222)"/><ellipse cx="125" cy="200" rx="18" ry="26" transform="rotate(144 125 222)"/><ellipse cx="125" cy="200" rx="18" ry="26" transform="rotate(216 125 222)"/><ellipse cx="125" cy="200" rx="18" ry="26" transform="rotate(288 125 222)"/></g><circle cx="125" cy="222" r="12" fill="#c2185b"/><circle cx="125" cy="222" r="4" fill="#ffcf4a"/></g>
-</svg>

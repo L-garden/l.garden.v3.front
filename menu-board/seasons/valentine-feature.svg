@@ -1,7 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 250 300">
-<style>.hb{transform-origin:125px 150px;animation:beat 1.4s ease-in-out infinite}@keyframes beat{0%,100%{transform:scale(1)}15%{transform:scale(1.1)}30%{transform:scale(.97)}45%{transform:scale(1.06)}}
-.u{animation:up 6s linear infinite}.u2{animation-delay:-2s}.u3{animation-delay:-4s}@keyframes up{0%{transform:translateY(40px);opacity:0}20%{opacity:1}100%{transform:translateY(-260px);opacity:0}}</style>
-<defs><path id="h" d="M0 10C-16 0-12-12-5-12-2-12 0-9 0-7 0-9 2-12 5-12 12-12 16 0 0 10z"/></defs>
-<g class="u"><use href="#h" x="40" y="260" fill="#f3a6bd"/></g><g class="u u2"><use href="#h" x="210" y="270" fill="#fa6868"/></g><g class="u u3"><use href="#h" x="180" y="250" fill="#f3a6bd"/><use href="#h" x="70" y="280" fill="#fa6868"/></g>
-<g class="hb"><path d="M125 230C40 175 55 90 98 90c16 0 24 12 27 22 3-10 11-22 27-22 43 0 58 85-27 140z" fill="#fa6868"/><path d="M92 110q-14 6-14 26" stroke="#fff" stroke-width="6" fill="none" stroke-linecap="round" opacity=".6"/></g>
-</svg>

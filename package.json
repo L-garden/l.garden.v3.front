@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "copy-menu-board": "rm -rf public/menu-board && mkdir -p public/menu-board && cp -R menu-board/tv.html menu-board/board.css menu-board/fonts menu-board/images menu-board/season.js menu-board/seasons public/menu-board/",
+    "copy-menu-board": "rm -rf public/menu-board && mkdir -p public/menu-board && cp -R menu-board/tv.html menu-board/board.css menu-board/fonts menu-board/images menu-board/season.js public/menu-board/",
     "predev": "npm run copy-menu-board",
     "prebuild": "npm run copy-menu-board",
     "dev": "next dev --turbopack",

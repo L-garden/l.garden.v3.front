@@ -1,8 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 250 300">
-<style>.c{transform-origin:125px 270px;animation:sw 3s ease-in-out infinite}.c2{animation-delay:-1s}.c3{animation-delay:-2s}@keyframes sw{0%,100%{transform:rotate(-5deg)}50%{transform:rotate(5deg)}}
-.h{animation:up 5s linear infinite}.h2{animation-delay:-2.5s}@keyframes up{0%{transform:translateY(20px);opacity:0}30%{opacity:1}100%{transform:translateY(-120px);opacity:0}}</style>
-<defs><g id="cn"><path d="M0 0v-120" stroke="#4f9d58" stroke-width="4"/><path d="M0-60q-20-6-24 10 18 4 24-10" fill="#64bb68"/><path d="M-22-140q4-16 12-12 4-12 10-4 6-8 10 4 8-4 12 12-6 16-22 16t-22-16z" fill="#fa6868"/><path d="M-16-142q16 8 32 0" stroke="#e04f5f" stroke-width="2" fill="none"/></g><path id="h" d="M0 8C-12 0-9-9-4-9-1-9 0-7 0-5 0-7 1-9 4-9 9-9 12 0 0 8z" fill="#f3a6bd"/></defs>
-<g class="h"><use href="#h" x="40" y="160"/></g><g class="h h2"><use href="#h" x="210" y="140"/></g>
-<g class="c"><use href="#cn" x="125" y="270"/></g><g class="c c2"><use href="#cn" x="125" y="270" transform="rotate(-18 125 270)"/></g><g class="c c3"><use href="#cn" x="125" y="270" transform="rotate(18 125 270)"/></g>
-<path d="M100 250l25 25 25-25z" fill="#ffcf4a"/>
-</svg>

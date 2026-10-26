@@ -1,8 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 250 300">
-<style>.br{transform-origin:250px 20px;animation:sw 4s ease-in-out infinite}@keyframes sw{0%,100%{transform:rotate(-3deg)}50%{transform:rotate(3deg)}}
-.f{animation:fall 7s linear infinite}.f2{animation-delay:-2.3s}.f3{animation-delay:-4.6s}@keyframes fall{0%{transform:translate(0,-20px) rotate(0)}50%{transform:translate(-20px,140px) rotate(180deg)}100%{transform:translate(10px,300px) rotate(360deg)}}</style>
-<defs><g id="bl"><g fill="#f7c6d4"><ellipse cy="-7" rx="5" ry="7"/><ellipse cy="-7" rx="5" ry="7" transform="rotate(72)"/><ellipse cy="-7" rx="5" ry="7" transform="rotate(144)"/><ellipse cy="-7" rx="5" ry="7" transform="rotate(216)"/><ellipse cy="-7" rx="5" ry="7" transform="rotate(288)"/></g><circle r="3" fill="#e07a9a"/></g><path id="pt" d="M0-6C4-6 5-2 0 5-5-2-4-6 0-6z" fill="#f3a6bd"/></defs>
-<g class="f"><use href="#pt" x="60" y="40"/><use href="#pt" x="180" y="10"/></g><g class="f f2"><use href="#pt" x="120" y="0"/><use href="#pt" x="220" y="60"/></g><g class="f f3"><use href="#pt" x="30" y="10"/><use href="#pt" x="160" y="50"/></g>
-<g class="br"><path d="M250 20C190 40 150 60 90 120M190 42c-10 30-5 50 0 70M140 80c-20 10-40 10-60 5" stroke="#7b542f" stroke-width="5" fill="none" stroke-linecap="round"/>
-<use href="#bl" x="95" y="115"/><use href="#bl" x="120" y="92"/><use href="#bl" x="160" y="68"/><use href="#bl" x="190" y="110"/><use href="#bl" x="80" y="85"/><use href="#bl" x="215" y="34"/><use href="#bl" x="175" y="85"/></g>
-</svg>
