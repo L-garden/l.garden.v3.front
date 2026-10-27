@@ -22,6 +22,10 @@
 - 지면1: 행 높이 34.5px, 섹션 제목 블록 43px, 음료 x=25~511, 빙수 x=539~1025(가격 우측 끝 1020), 빙수 사진 327x346 3장.
 - 지면2: 카드 3열(x=25/370/710), 사진 309~315x344, 행 시작 y=0/495/1010.
 
+## TV 화면 맞춤
+
+`tv.html`의 판(`.board`, 1920x1080)은 `<svg class="fit" viewBox="0 0 1920 1080" preserveAspectRatio="none"><foreignObject>` 안에 들어 있고, 이 SVG가 화면 가로·세로 100%로 늘고 줄어든다. 자바스크립트로 화면 크기를 재면 매장 TV 브라우저(확대 배율이 걸려 있음)에서 판이 잘리므로 이 구조를 바꾸지 않는다. 메뉴는 `.board` 안에서만 고친다.
+
 ## 마크업 규칙
 
 - 음료 행: `<li class="item"><span class="name">이름<small>(보조)</small><b class="best">BEST</b><b class="ice">only ice</b></span><span class="price">8.0</span></li>`

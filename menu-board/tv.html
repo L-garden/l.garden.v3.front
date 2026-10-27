@@ -6,8 +6,11 @@
 <title>엘가든 메뉴</title>
 <link rel="stylesheet" href="board.css">
 <style>
-  body { overflow: hidden; }
-  .board { width: 1920px; height: 1080px; transform-origin: 0 0; }
+  /* 1920x1080 판을 SVG 틀에 넣어 화면 가로·세로 100%로 늘이고 줄인다(예전 이미지 메뉴판과 같은 방식).
+     자바스크립트로 화면 크기를 재지 않으므로 TV 브라우저 확대 배율과 상관없이 꽉 찬다. */
+  html, body { height: 100%; overflow: hidden; }
+  .fit { display: block; position: fixed; left: 0; top: 0; width: 100vw; height: 100vh; height: 100dvh; }
+  .board { width: 1920px; height: 1080px; }
   .photos { left: 14px; top: 4px; width: 250px; display: grid; grid-auto-rows: 268.67px; }
   .photos img { width: 250px; height: 250px; }
   .photos figcaption { height: 20px; font-size: 15px; line-height: 20px; text-align: right; }
@@ -18,6 +21,7 @@
 </style>
 </head>
 <body>
+<svg class="fit" viewBox="0 0 1920 1080" preserveAspectRatio="none" role="img" aria-label="엘가든 메뉴"><foreignObject x="0" y="0" width="1920" height="1080">
 <main class="board">
 
   <!-- 왼쪽 음료 사진 4장 -->
@@ -179,12 +183,7 @@
 
 
 </main>
+</foreignObject></svg>
 <script src="season.js"></script>
-<script>
-  // TV 화면 크기에 맞춰 1920x1080 판을 꽉 채운다(기존 이미지 방식과 동일하게 가로·세로 각각 늘림).
-  const board = document.querySelector('.board');
-  const fit = () => { board.style.transform = `scale(${innerWidth / 1920}, ${innerHeight / 1080})`; };
-  addEventListener('resize', fit); fit();
-</script>
 </body>
 </html>
