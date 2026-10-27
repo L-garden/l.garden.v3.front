@@ -59,5 +59,5 @@
 
 - `season.js` 맨 위의 `ENABLED`(테마별 true/false, 켜진 테마는 자기 기간에만 표시)와 `FORCE`(기간과 상관없이 지금 띄울 테마, 끄려면 `''`)만 고친다.
 - 지면메뉴에는 넣지 않는다(인쇄용).
-- 테마 이름: spring, summer, snow, seollal, chuseok, buddha, valentine, taegeuk, family, hangul, halloween, pepero, christmas. 기간은 `FIXED`(양력)·`LUNAR`(음력 명절의 양력 날짜).
+- 테마 이름: spring, summer, snow, seollal, chuseok, buddha, valentine, taegeuk, family, hangul, halloween, pepero, christmas, autumn. 기간은 `FIXED`(양력)·`LUNAR`(음력 명절의 양력 날짜).
 - 조각 모양·개수·투명도를 바꿀 때는 `THEMES`·`S`(모양)·`scatter`를 고친다. 렌더 확인: `--season <테마>`.

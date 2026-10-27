@@ -4,7 +4,7 @@
 // 켤 테마만 true. 켜진 테마는 아래 기간(FIXED·LUNAR)에만 자동으로 나온다. 기본은 모두 꺼짐.
 const ENABLED = {
   spring: true, summer: true, snow: true, seollal: true, chuseok: true, buddha: true, valentine: true,
-  taegeuk: true, family: true, hangul: true, halloween: true, pepero: true, christmas: true,
+  taegeuk: true, family: true, hangul: true, halloween: true, pepero: true, christmas: true, autumn: false,
 };
 // 기간과 상관없이 지금 바로 띄울 테마 이름. 없으면 ''
 const FORCE = '';
@@ -47,6 +47,7 @@ const THEMES = {
   halloween: { name: '할로윈', motion: 'float', sprites: [S.bat('#3b2e4a'), S.bat('#57595b'), S.pumpkin(), S.star('#ff894f')], twinkle: true },
   pepero: { name: '빼빼로데이', motion: 'fall', sprites: [S.pepero('#7b542f'), S.pepero('#f3a6bd'), S.pepero('#57595b')] },
   christmas: { name: '크리스마스', motion: 'fall', sprites: [S.flake('#8cc4ec'), S.ornament('#fa6868'), S.ornament('#64bb68'), S.star('#ffcf4a')], twinkle: true },
+  autumn: { name: '가을(단풍)', motion: 'fall', sprites: [S.maple('#fa6868'), S.ginkgo('#ffcf4a'), S.maple('#e04f5f'), S.ginkgo('#e8a900')] },
 };
 
 // 음력 명절의 양력 날짜 — 해마다 이어서 적을 것. [이름, 날짜들, 며칠 전부터, 며칠 후까지]
@@ -61,7 +62,7 @@ const FIXED = [
   ['valentine', '02-07', '02-14'], ['valentine', '03-07', '03-14'],
   ['family', '05-01', '05-08'], ['hangul', '10-06', '10-09'], ['halloween', '10-17', '10-31'],
   ['pepero', '11-07', '11-11'], ['christmas', '12-01', '12-25'],
-  ['spring', '03-20', '04-20'], ['summer', '07-01', '08-31'], ['snow', '12-26', '12-31'], ['snow', '01-01', '02-28'],
+  ['spring', '03-20', '04-20'], ['summer', '07-01', '08-31'], ['autumn', '09-15', '11-30'], ['snow', '12-26', '12-31'], ['snow', '01-01', '02-28'],
 ];
 
 function seasonFor(date) {
