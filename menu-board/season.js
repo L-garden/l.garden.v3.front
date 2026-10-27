@@ -3,8 +3,8 @@
 // ── 설정: 슬랙봇은 이 두 곳만 고친다 ──
 // 켤 테마만 true. 켜진 테마는 아래 기간(FIXED·LUNAR)에만 자동으로 나온다. 기본은 모두 꺼짐.
 const ENABLED = {
-  spring: false, summer: false, snow: false, seollal: false, chuseok: false, buddha: false, valentine: false,
-  taegeuk: false, family: false, hangul: false, halloween: false, pepero: false, christmas: false,
+  spring: true, summer: true, snow: true, seollal: true, chuseok: true, buddha: true, valentine: true,
+  taegeuk: true, family: true, hangul: true, halloween: true, pepero: true, christmas: true,
 };
 // 기간과 상관없이 지금 바로 띄울 테마 이름. 없으면 ''
 const FORCE = '';
