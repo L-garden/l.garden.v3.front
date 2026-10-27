@@ -91,7 +91,7 @@ function scatter(board, theme) {
     p.className = `p ${t.motion}${t.twinkle && i % 3 === 0 ? ' tw' : ''}`;
     const dur = t.motion === 'float' ? rnd(18, 30) : rnd(14, 26);
     p.style.cssText = [
-      `--x:${rnd(0, W)}px`, `--y:${rnd(0, H)}px`, `--sz:${rnd(14, 30)}px`, `--o:${rnd(0.3, 0.55).toFixed(2)}`,
+      `--x:${rnd(0, W)}px`, `--y:${rnd(0, H)}px`, `--sz:${rnd(56, 120)}px`, `--o:${rnd(0.3, 0.55).toFixed(2)}`,
       `--dur:${dur}s`, `--delay:${-rnd(0, dur)}s`, `--dx:${rnd(-120, 120)}px`, `--rot:${rnd(-360, 360)}deg`,
       `--sw:${rnd(10, 30)}px`, `--swdur:${rnd(2.5, 5)}s`,
     ].join(';');
