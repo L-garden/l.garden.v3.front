@@ -4,7 +4,7 @@
 // 켤 테마만 true. 켜진 테마는 아래 기간(FIXED·LUNAR)에만 자동으로 나온다. 기본은 모두 꺼짐.
 const ENABLED = {
   spring: true, summer: true, snow: true, seollal: true, chuseok: true, buddha: true, valentine: true,
-  taegeuk: true, family: true, hangul: true, halloween: true, pepero: true, christmas: true, autumn: false,
+  taegeuk: true, family: true, hangul: true, halloween: false, pepero: true, christmas: true, autumn: true,
 };
 // 기간과 상관없이 지금 바로 띄울 테마 이름. 없으면 ''
 const FORCE = '';
